@@ -24,7 +24,8 @@ import os
 import glob
 
 from distutils.core import setup, Command
-from buildbot import version
+#from buildbot import version
+version = "0.8.6isotoma1"
 
 from distutils.command.install_data import install_data
 from distutils.command.sdist import sdist
