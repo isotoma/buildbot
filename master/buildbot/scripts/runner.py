@@ -1347,8 +1347,7 @@ def run():
     elif command == "tryserver":
         doTryServer(so)
     elif command == "checkconfig":
-        if not doCheckConfig(so):
-            sys.exit(1)
+        sys.exit(doCheckConfig(so))
     elif command == "user":
         if not users_client(so, True):
             sys.exit(1)
